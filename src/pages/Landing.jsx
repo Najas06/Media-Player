@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 function Landing() {
   return (
     <>
@@ -13,7 +14,9 @@ function Landing() {
         <h3>Welcome to <span className='text-warning'>Media Player</span></h3>
         <p className='mt-3 mb-3' style={{textAlign:"justify"}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero culpa, quaerat nam dolorum reprehenderit accusantium, sapiente repudiandae voluptatem quia cupiditate qui dolores, aperiam odit illum distinctio rerum? Rerum, soluta quis?
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta magni voluptates repellat reiciendis tempora eius odit in voluptatibus! Necessitatibus nobis voluptatem ipsum sint commodi vero porro a delectus eaque veniam.</p>
+        <Link to='/home'>
         <button className='btn btn-warning mt-5'>Get Started <i class="fa-solid fa-arrow-right ms"></i></button>
+        </Link>
         </Col>
         <Col>
           <img src="https://media.tenor.com/lhlDEs5fNNEAAAAC/music-beat.gif" alt="" style={{height:"400px"}} className='ms-5' />
@@ -58,12 +61,22 @@ function Landing() {
     </Card>
       </div>
     </div>
-    <div className="container mb-5 mt-5 border border-2 border-secondary rounded">
+    <div className="container mb-5 mt-5 border border-2 border-secondary rounded p-5">
       <Row>
         <Col>
           <h3 className='text-warning mt-5 mb-5'>Simple and Powerfull</h3>
+          <p><h4>Play Everthing:</h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi distinctio consequuntur nam voluptates placeat accusantium animi, neque libero explicabo repellendus labore, assumenda cumque maiores, rerum fugit itaque quam asperiores impedit?</p>
+          <p><h4></h4></p>
+          <p><h4>Play Everthing:</h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi distinctio consequuntur nam voluptates placeat accusantium animi, neque libero explicabo repellendus labore, assumenda cumque maiores, rerum fugit itaque quam asperiores impedit?</p>
+          <p><h4></h4></p>
+          <p><h4>Play Everthing:</h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi distinctio consequuntur nam voluptates placeat accusantium animi, neque libero explicabo repellendus labore, assumenda cumque maiores, rerum fugit itaque quam asperiores impedit?</p>
+          <p><h4></h4></p>
         </Col>
-        <Col></Col>
+        <Col>
+          <div  style={{marginTop:"130px"}}>
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/xXqgcm8dWyE?si=NKAbIHZ4ReH7Cj96" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </Col>
 
       </Row>
     </div>
