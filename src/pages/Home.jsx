@@ -19,6 +19,15 @@ function Home() {
         Watch Histrory
       </div>
     </div>
+    <div className="container mt-5 mb-5 d-flex justify-content-between align-item-center">
+      <div className="col-md-6 mt-5">
+        <h4>All Videos</h4>
+        <View/>
+      </div>
+      <div>
+        Add Category
+      </div>
+    </div>
     </>    
   )
 }
