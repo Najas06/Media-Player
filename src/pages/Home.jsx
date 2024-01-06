@@ -3,8 +3,11 @@ import Add from '../components/Add'
 import Category from '../components/Category'
 import View from '../components/View'
 import Videocard from '../components/Videocard'
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
+    // useNavigate() : it is hook used to navigate from one page to anotherLL
+    const navigateByurl = useNavigate()
   return (
     <>
     {/* <Add/>
@@ -16,7 +19,7 @@ function Home() {
         <Add/>
       </div>
       <div>
-        Watch Histrory
+        <h3 style={{fontSize:"30px" , cursor:"pointer"}}onClick={()=>navigateByurl('/Watchhistory')}>Watch Histrory</h3>
       </div>
     </div>
     <div className="container mt-5 mb-5 d-flex justify-content-between align-item-center">
@@ -25,7 +28,7 @@ function Home() {
         <View/>
       </div>
       <div>
-        Add Category
+        <Category/>
       </div>
     </div>
     </>    
